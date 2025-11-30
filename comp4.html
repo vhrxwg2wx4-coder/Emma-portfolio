@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Compétence 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4f2;
+            position: relative; /* nécessaire pour le positionnement absolu des boutons */
+        }
+
+        .title {
+            font-family: "Zalando Sans Expanded", sans-serif;
+            font-size: 36px;
+            text-align: center;
+            padding-top: 40px;
+  	    margin-bottom: 70px;
+            font-weight: bold;
+	    text-decoration: underline;
+        }
+
+        .text-banner {
+            background-color: #dfd3ca;
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 18px;
+            line-height: 1.6;
+	    margin-bottom: 50px;
+        }
+
+        .photo-and-text {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .side-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e2a9f1;
+        }
+
+        .side-text {
+            width: 35%;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .link-container {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        .link-container a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title { font-size: 30px; margin-top: 15px; }
+            .text-banner { width: 90%; padding: 15px; }
+            .photo-and-text {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .side-text { width: 80%; }
+            .link-container { padding: 0 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <h1 class="title">4. Ethique professionnelle</h1>
+
+    <div class="text-banner">
+        <p>
+            L’éthique professionnelle occupe une place centrale en Gestion de la Relation Client (GRC), 
+            car elle conditionne la confiance entre l’entreprise, ses clients et ses collaborateurs. 
+            Elle constitue un cadre essentiel pour garantir une relation durable, transparente et respectueuse.
+        </p>
+    </div>
+
+    <div class="photo-and-text">
+        <div class="side-text left-text">
+            <h3>Respect et protection des données personnelles</h3>
+            <p>
+                Lors de mon stage en cabinet libéral de sage-femme, j’ai été amené(e) à consulter des dossiers patients 
+                et j’ai toujours respecté strictement le secret médical et la confidentialité des données. 
+                De même, pour la MasterClass Arthrex, nous avons signé un contrat de confidentialité afin de protéger leurs informations sécurisées.
+            </p>
+        </div>
+
+        <div class="side-text right-text">
+            <h3>Transparence et honnêteté dans les interactions</h3>
+            <p>
+                Lorsque j’ai travaillé en restauration, j’ai toujours fait preuve d’honnêteté avec les clients. 
+                Si je savais qu’un plat ne leur conviendrait pas, je ne le recommandais pas, même s’il était plus cher. 
+                Pour moi, il est essentiel de conseiller le client selon son réel besoin et son goût, et non en fonction de ce qui rapporterait le plus.
+            </p>
+        </div>
+    </div>
+
+    <div class="link-container">
+        <a href="index.html">⬅️ Revenir au dé</a>
+        <a href="annexe4.html">Voir annexes ➡️</a>
+    </div>
+</div>
+
+</body>
+</html>

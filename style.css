@@ -1,0 +1,198 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* fond blanc */
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Page container en flex pour bandeau + contenu */
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Bandeau vertical gauche plus large */
+.sidebar {
+    width: 160px; /* deux fois plus large */
+    background-color: #dfd3ca; /* beige clair */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* place le texte en bas */
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer-left {
+    font-size: 1.3rem;
+    color: #222;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Contenu principal */
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* gauche / droite */
+    grid-template-rows: auto 1fr;
+    padding: 20px 40px; /* décale contenu à droite du bandeau */
+    gap: 20px;
+}
+
+/* Header haut gauche */
+.header-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: start;
+    justify-self: start;
+}
+
+.header-left h1 {
+    font-family: 'Fascinate', sans-serif;
+    font-size: 5rem; /* deux fois plus gros */
+    margin-bottom: 10px;
+}
+
+.header-left h2 {
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Interaction centre gauche */
+.interaction-center {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* encore plus d'espace entre dé et bouton */
+    margin-top: 40px;
+}
+
+/* Dé */
+#dice-wrapper {
+    width: 180px;
+    height: 180px;
+    perspective: 900px;
+}
+
+#dice {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-out;
+}
+
+.face {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 3px solid rgba(0,0,0,0.2);
+    box-shadow:
+        inset 0 0 20px rgba(0,0,0,0.15),
+        0 8px 25px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.face1 { transform: rotateY(0deg) translateZ(90px); }
+.face2 { transform: rotateY(90deg) translateZ(90px); }
+.face3 { transform: rotateY(180deg) translateZ(90px); }
+.face4 { transform: rotateY(-90deg) translateZ(90px); }
+.face5 { transform: rotateX(90deg) translateZ(90px); }
+.face6 { transform: rotateX(-90deg) translateZ(90px); }
+
+#dice-wrapper::after {
+    content: "";
+    width: 160px;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.3), transparent);
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    filter: blur(5px);
+}
+
+/* Bouton */
+#lancerBtn {
+    padding: 14px 24px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Résultat texte */
+#resultat {
+    font-size: 1.5rem;
+}
+
+/* Portrait droite */
+.portrait-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait-right img {
+    height: 75vh;
+    width: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .page-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-left {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 20px;
+    }
+
+    .portrait-right img {
+        height: 50vh;
+        margin-top: 20px;
+    }
+
+    .interaction-center {
+        gap: 30px;
+        margin-top: 20px;
+    }
+}

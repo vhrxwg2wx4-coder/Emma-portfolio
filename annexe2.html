@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Annexe comp2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .title {
+            font-family: "Zalando Sans Expanded", sans-serif;
+            font-size: 40px;
+            text-align: center;
+            margin: 0px 0;
+	    padding-top: 40px;
+            font-weight: bold;
+            text-decoration: underline;
+            flex-shrink: 0;
+        }
+
+        .photos-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+            gap: 20px;
+        }
+
+        .photo-column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+        }
+
+        .photo-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+            align-self: flex-start; /* force le bord supérieur */
+        }
+
+        .text-above {
+            text-align: center;
+            margin-top: 12px; /* placé en dessous de l'image */
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .bottom-link {
+            flex-shrink: 0;
+            text-align: left;
+            position: fixed;
+            bottom: 40px;
+            padding: 0 40px;
+        }
+
+        .bottom-link a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        @media (max-width: 900px) {
+            .photos-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-column {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Annexes</div>
+
+        <div class="photos-wrapper">
+            <div class="photo-column">
+                <img src="photo3annexe2.jpg" alt="Photo 1">
+                <div class="text-above">Premier bilan épidémiologique du dispositif national de surveillance des épidémies de gastro-entérites aiguës d’origine hydrique en France entre 2010 et 2022</div>
+            </div>
+
+            <div class="photo-column">
+                <img src="photo2annexe2.jpg" alt="Photo 2">
+            </div>
+
+            <div class="photo-column">
+                <img src="photo1annexe2.jpg" alt="Photo 3">
+            </div>
+        </div>
+
+        <div class="bottom-link">
+            <a href="index.html">⬅️ Revenir au dé</a>
+        </div>
+    </div>
+</body>
+</html>

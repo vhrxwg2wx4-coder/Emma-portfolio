@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Compétence 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4f2;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px 20px 80px 20px; /* espace pour les boutons */
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-family: "Zalando Sans Expanded", sans-serif;
+            font-size: 36px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .text-banner {
+            background-color: #dfd3ca;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .photo-and-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .side-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #e2a9f1;
+        }
+
+        .side-text {
+            width: 25%;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .center-photo {
+            width: 340px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* Liens fixés en bas */
+        .link-container {
+            display: flex;            
+            justify-content: space-between; 
+            width: 100%;              
+            position: fixed;
+            bottom: 40px;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        .link-container a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title { font-size: 30px; margin: 15px 0; }
+            .text-banner { width: 90%; padding: 15px; }
+            .photo-and-text {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                margin-top: 15px;
+            }
+            .side-text { width: 80%; }
+            .link-container { padding: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <h1 class="title">3 . Organisation</h1>
+
+    <div class="text-banner">
+        <p>La gestion du temps et l’organisation sont des compétences que j’ai développées grâce à la discipline. Une planification rigoureuse de mes tâches me permet d’être clair sur les priorités et d’avancer efficacement. Cette organisation n’est pas rigide : elle me rend également capable de m’adapter rapidement en cas d’imprévu, de rester serein et de ne pas être surpris par un changement.</p>
+    </div>
+
+    <div class="photo-and-text">
+        <div class="side-text left-text">
+            <h3>Gestion des priorités</h3>
+            <p>Pendant mon année de PASS, j’organisais ma semaine en fonction des matières et des objectifs les plus importants. Chaque journée était planifiée heure par heure, avec des plages de révision définies pour rester efficace. Cette organisation rigoureuse me permettait d’avancer de manière structurées.</p>
+        </div>
+
+        <img src="photocomp3.jpg" alt="Illustration" class="center-photo">
+
+        <div class="side-text right-text">
+            <h3>Discipline personnelle</h3>
+            <p>La discipline se manifeste aussi dans ma pratique sportive : courir trois fois par semaine demande constance et engagement, même lorsqu’il fait froid ou que la fatigue se fait sentir. Cette régularité m’a appris à maintenir mes objectifs malgré les difficultés et à compter sur ma propre motivation.</p>
+            <h3>Gestion des imprévus et adaptabilité</h3>
+            <p>Être organisé, c’est aussi anticiper l’inattendu. Je prévois toujours des marges dans mon emploi du temps pour gérer les imprévus. Cela me permet de réajuster rapidement mon planning en cas de changement ou de problème, sans perdre en efficacité ni en sérénité.</p>
+        </div>
+    </div>
+</div>
+
+<div class="link-container">
+    <a href="index.html" class="back-link">⬅️ Revenir au dé</a>
+    <a href="annexe3.html" class="back-link-2">Voir annexes ➡️</a>
+</div>
+
+</body>
+</html>

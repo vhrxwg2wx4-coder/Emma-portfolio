@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Compétence 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4f2;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px 20px 80px 20px; /* espace pour les boutons en bas */
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-family: "Zalando Sans Expanded", sans-serif;
+            font-size: 36px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .text-banner {
+            background-color: #dfd3ca;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .photo-and-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .side-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #e2a9f1;
+        }
+
+        .side-text {
+            width: 25%;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .center-photo {
+            width: 340px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* Liens fixés en bas */
+        .link-container {
+            display: flex;            
+            justify-content: space-between; 
+            width: 100%;              
+            position: fixed;
+            bottom: 40px;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        .link-container a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title { font-size: 30px; margin: 15px 0; }
+            .text-banner { width: 90%; padding: 15px; }
+            .photo-and-text {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                margin-top: 15px;
+            }
+            .side-text { width: 80%; }
+            .center-photo { width: 80%; max-width: 300px; }
+            .link-container { padding: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <h1 class="title">5. La relation client</h1>
+
+    <div class="text-banner">
+        <p>
+            À mon sens, la relation client est le cœur de la GRC. Il est important de rappeler qu’il y a une personne derrière chaque relation. 
+            Il faut savoir s’adapter à ses attentes et anticiper ses problèmes. Étant une personne avenante et enjouée, j’aime particulièrement le contact direct. 
+            C’est en échangeant et en écoutant le client que l’on peut créer des solutions vraiment pertinentes et personnalisées.
+        </p>
+    </div>
+
+    <div class="photo-and-text">
+        <div class="side-text left-text">
+            <h3>Accompagnement et personnalisation de la demande</h3>
+            <p>
+                Mes trois années d’expérience en restauration m’ont permis de développer une véritable maîtrise de la relation client. 
+                J’ai appris à m’adapter rapidement à chaque client, à comprendre ses attentes et à ajuster mon approche en fonction de ses besoins. 
+                Cette capacité à écouter, à observer et à répondre de manière personnalisée me permet de cerner avec précision les objectifs de chaque client et de proposer des solutions adaptées.
+            </p>
+        </div>
+
+        <img src="photocomp5.jpg" alt="Illustration" class="center-photo">
+
+        <div class="side-text right-text">
+            <h3>Compréhension du besoin</h3>
+            <p>
+                Lors de mon stage dans un cabinet libéral de sage-femme, j’ai développé ma capacité à écouter, comprendre et m’adapter aux besoins des patientes. 
+                Être avenante et enjouée m’a permis de créer un vrai lien de confiance, illustrant l’importance du contact humain au cœur de la GRC.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="link-container">
+    <a href="index.html" class="back-link">⬅️ Revenir au dé</a>
+    <a href="annexe5.html" class="back-link-2">Voir annexes ➡️</a>
+</div>
+
+</body>
+</html>
