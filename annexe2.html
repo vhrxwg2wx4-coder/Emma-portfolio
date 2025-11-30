@@ -24,7 +24,7 @@
             font-size: 40px;
             text-align: center;
             margin: 0px 0;
-	    padding-top: 40px;
+            padding-top: 40px;
             font-weight: bold;
             text-decoration: underline;
             flex-shrink: 0;
@@ -51,15 +51,20 @@
             width: 100%;
             height: auto;
             display: block;
-            align-self: flex-start; /* force le bord supérieur */
+            border-radius: 6px;
         }
 
-        .text-above {
+        /* Légende */
+        .legend {
+            margin-top: 10px;
+            font-size: 15px;
+	    font-weight: bold;
+	    font-style: italic;
             text-align: center;
-            margin-top: 12px; /* placé en dessous de l'image */
-            font-size: 16px;
-            font-weight: bold;
-            width: 100%;
+            width: 100%; 
+            word-wrap: break-word;
+            line-height: 1.3;
+            padding: 5px;
             box-sizing: border-box;
         }
 
@@ -93,18 +98,29 @@
         <div class="title">Annexes</div>
 
         <div class="photos-wrapper">
+
             <div class="photo-column">
-                <img src="photo3annexe2.jpg" alt="Photo 1">
-                <div class="text-above">Premier bilan épidémiologique du dispositif national de surveillance des épidémies de gastro-entérites aiguës d’origine hydrique en France entre 2010 et 2022</div>
+                <img src="photo3annexe2.jpg" alt="Annexe 1">
+                <div class="legend">
+                   Annexe 6 :  Synthèse d’un article scientifique
+Article : Premier bilan épidémiologique du dispositif national de surveillance des épidémies de gastro-entérites aiguës d’origine hydrique en France entre 2010 et 2022
+                </div>
             </div>
 
             <div class="photo-column">
-                <img src="photo2annexe2.jpg" alt="Photo 2">
+                <img src="photo2annexe2.jpg" alt="Annexe 2">
+                <div class="legend">
+                 Annexe 5 :  Analyse des résultats du questionnaire du module marketing en création d’entreprise. 
+                </div>
             </div>
 
             <div class="photo-column">
-                <img src="photo1annexe2.jpg" alt="Photo 3">
+                <img src="photo1annexe2.jpg" alt="Annexe 3">
+                <div class="legend">
+                   Annexe 4 :  Exemple d’analyse de résultats statistiques au cours de ma troisième année de licence. 
+                </div>
             </div>
+
         </div>
 
         <div class="bottom-link">
